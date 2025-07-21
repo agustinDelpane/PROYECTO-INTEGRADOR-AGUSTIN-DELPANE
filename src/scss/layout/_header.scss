@@ -1,0 +1,24 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+header {
+    grid-area: header;
+
+    padding: var.$spacing-lg;
+
+    background-color: rgba($color: var.$color-neutro-700, $alpha: 0.96);
+    color: var.$color-neutro-100;
+
+    .img-logo{
+        width: 8%;
+        position: absolute;
+        top: 0px;
+        left: 320px;
+    }
+
+    h1{
+        font-size: var.$font-size-xxxl;
+        letter-spacing: var.$spacing-xs;
+        color: var.$color-danger-700;
+    }
+}

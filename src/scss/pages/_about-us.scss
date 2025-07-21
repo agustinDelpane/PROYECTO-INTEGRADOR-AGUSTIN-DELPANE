@@ -1,0 +1,51 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.page-about-us {
+    .approaches-container {
+        display: flex;
+        flex-direction: column;
+        gap: var.$spacing-lg;
+        background-color: rgba($color: var.$color-neutro-700, $alpha: 0.94);
+
+        .title {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .mission,
+        .vision,
+        .values {
+
+            &__title {
+                color: var.$color-neutro-100;
+                font-size: var.$font-size-lg;
+                font-weight: var.$font-weight-bold;
+                padding: 0 var.$spacing-sm var.$spacing-sm var.$spacing-sm;
+            }
+
+            &__description {
+                color: var.$color-neutro-100;
+                font-size: var.$font-size-md;
+                font-weight: var.$font-weight-regular;
+                text-align: justify;
+                padding: 0 var.$spacing-sm;
+            }
+
+            &__image {
+                height: fit-content;
+                width: 25%;
+                float: left;
+                margin: 0 var.$spacing-sm var.$spacing-xs 0;
+                padding: 0 var.$spacing-md var.$spacing-md var.$spacing-md;
+            }
+        }
+
+        .vision {
+            &__image {
+                float: right;
+                margin: 0 0 var.$spacing-xs var.$spacing-sm;
+            }
+        }
+    }
+}
