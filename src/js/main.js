@@ -108,11 +108,6 @@ const productList = [
         80000],
 ]
 
-/*
-Cada tarjeta debe contener: imagen, título, código, descripción (usar ellipsis), precio, botón para agregar al carrito, 
-botón para quitar del carrito, contador de unidades agregadas (usar closure).
-*/
-
 const createCard = (product) => {
     const card = document.createElement('div')
     card.classList.add('card')
