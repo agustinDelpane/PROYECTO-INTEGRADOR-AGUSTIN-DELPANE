@@ -1,0 +1,25 @@
+@use "@/scss/variables" as var;
+@use "@/scss/typography";
+
+.institution-logo {
+    display: flex;
+    align-items: center;
+    gap: var.$spacing-sm;
+
+    &__logo {
+        height: fit-content;
+        width: var.$spacing-xxxl;
+        // position: absolute;
+        // top: 50px;
+        // left: 500px;
+    }
+
+    &__title {
+        font-size: var.$font-size-xxxl;
+        font-weight: var.$font-weight-regular;
+        // word-spacing: var.$spacing-md;
+        letter-spacing: var.$spacing-xs;
+        color: var.$color-danger-700;
+    }
+
+}

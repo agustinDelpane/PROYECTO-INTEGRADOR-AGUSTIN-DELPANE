@@ -1,0 +1,25 @@
+@use "@/scss/variables" as var;
+
+.header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba($color: var.$color-neutro-800, $alpha: 0.9);
+
+    :first-child {
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    :last-child {
+        grid-column: 3;
+        justify-self: end;
+        align-self: start;
+    }
+
+    &__title {
+        color: var.$color-neutro-200;
+        text-align: center;
+    }
+}
