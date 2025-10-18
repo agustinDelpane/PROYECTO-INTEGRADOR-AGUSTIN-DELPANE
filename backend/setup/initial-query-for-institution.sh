@@ -1,19 +1,19 @@
 db.institutions.insertOne({
-    name: "Mi App",
-    address: "Av. Siempreviva 100, San Juan, Argentina",
-    phone: "+54 264 1234-5678",
-    email: "info@miapp.com",
+    name: "Rock Hard",
+    address: "Av. Sarmiento 188, Buenos Aires, Argentina",
+    phone: "+54 11 2345-6789",
+    email: "info@rockhardmusic.com",
     logo: "logo.png",
     mission: {
-        description: "Nuestra misión es desarrollar soluciones tecnológicas innovadoras que mejoren la vida de las personas y potencien el crecimiento de las organizaciones. Nos enfocamos en ofrecer productos y servicios digitales accesibles, seguros y de alta calidad, promoviendo la transformación digital y la eficiencia operativa en cada uno de nuestros clientes. Buscamos combinar la creatividad, la tecnología y el compromiso humano para brindar experiencias que generen valor real, impulsando un futuro más conectado, inclusivo y sostenible.",
+        description: "Nuestra misión personal como tienda de instrumentos es poder acercar el maravilloso mundo de la música hacia tus manos, con la mejor calidad de instrumentos al mejor precio posible. En un mundo cada vez más digital, queremos que la gente vuelva a acercarse a los instrumentos tradicionales y a la belleza de la composición musical. Ya sea que compres una guitarra, una batería, un teclado o el instrumento que precises, nuestra misión es entregar la mejor calidad al mejor precio del mercado, con una atención al cliente personalizada y detallada para despejar cualquier duda que se pueda encontrar en el camino a convertirse en un nuevo gran músico."
         thumbnail: "mission.png",
     },
     vision: {
-        description: "Ser una empresa referente en el ámbito tecnológico a nivel regional e internacional, reconocida por la excelencia, la innovación y el impacto positivo de nuestras soluciones. Aspiramos a liderar la transformación digital con un enfoque centrado en las personas, convirtiéndonos en un aliado estratégico de confianza para empresas, instituciones y comunidades. Nuestra visión es construir un ecosistema tecnológico sostenible donde la innovación, la ética y el desarrollo humano convivan en equilibrio, generando oportunidades para todos.",
+        description: "Nuestra visión se basa en que un mundo más feliz es un mundo con más música, más gente aprendiendo a componer o a tocar y disfrutar sus canciones favoritas a través de un instrumento. Eso se ha perdido con el paso del tiempo y el avance masivo de las tecnologías. Hoy ponemos nuestro negocio a disposición para que cualquiera pueda volver al primer amor de la humanidad: la música. A través de nuestra plataforma, o en nuestro local físico ubicado en el barrio de Núñez, podrás comprar, ver o consultar por instrumentos de todas las clases. Todas las semanas tenemos nuevos instrumentos, por lo que si no encuentras tu instrumento favorito acá, ¡es probable que lo encuentres la semana próxima! También, viniendo a nuestro local en Monroe 814, podrás ver y probar distintos instrumentos para ver cuál se adapta más a tus necesidades musicales. Todo al mejor precio del mercado y con la mejor calidad y atención.",
         thumbnail: "vision.png",
     },
     values: {
-        description: "En Mi App creemos que nuestros valores son la base de todo lo que hacemos. Promovemos la innovación continua, impulsando la creatividad y la búsqueda constante de nuevas soluciones tecnológicas que aporten verdadero valor a la sociedad. Nos guía un profundo compromiso con la calidad, asegurando que cada producto y servicio refleje excelencia, confiabilidad y mejora permanente. Fomentamos el trabajo en equipo y la colaboración, convencidos de que la diversidad de ideas y la unión de talentos fortalecen nuestros resultados y enriquecen nuestro entorno laboral. Actuamos siempre con ética, transparencia e integridad, construyendo relaciones basadas en la confianza y el respeto mutuo. Mantenemos una firme orientación al cliente, escuchando y comprendiendo sus necesidades para ofrecer experiencias que superen sus expectativas. Finalmente, asumimos una responsabilidad social y ambiental, contribuyendo activamente a un desarrollo sostenible y equilibrado, donde la tecnología esté al servicio del bienestar de las personas y del planeta.",
+        description: "Nuestros valores están siempre con el cliente y a favor de facilitar el mundo de la música hacia cualquier persona que esté interesada. Nos respaldamos en una gran atención y servicio de calidad para servir al cliente de la mejor forma. ¡Cualquier interés o pregunta es válida! No es necesario tener conocimientos de música para ser cliente de esta gran tienda de música. Nadie va a juzgarte por no saber cómo suena un Si bemol en afinación Drop C#. Aunque no sepas ni cómo cambiar una cuerda, ¡no hay problema! Nuestros profesionales van a estar a disposición para ayudarte y despejarte cualquier duda que tengas para que puedas decidir si te gustaría entrar en el maravilloso mundo de la música con el instrumento que más te guste.",
         thumbnail: "values.png",
     },
     createdAt: new Date(),
