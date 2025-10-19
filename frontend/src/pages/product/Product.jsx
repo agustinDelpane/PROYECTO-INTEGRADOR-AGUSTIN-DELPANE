@@ -8,7 +8,7 @@ const Product = () => {
 
     return (
         <div className="product">
-            <Text variant="h2">Producto</Text>
+            <Text variant="h2" className="title">Producto</Text>
             <ProductForm idProduct={id || null}/>
         </div>
     );

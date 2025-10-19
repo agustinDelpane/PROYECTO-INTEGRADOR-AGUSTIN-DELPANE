@@ -1,6 +1,6 @@
 import { IconButtonBadge } from "@/components/icon-buttons";
 import AppContext from "@/contexts/AppContext";
-import { ShoppingCart as ShoppingCartIcon } from "@mui/icons-material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useContext } from "react";
 import "./header.scss";
 import InstitutionLogo from "./institution-logo/InstitutionLogo";
@@ -21,7 +21,7 @@ const Header = () => {
             <IconButtonBadge
                 className="header__shopping-cart"
                 badgeContent={shoppingCart.totalQuantity ?? 0}>
-                <ShoppingCartIcon onClick={handleShoppingCart}/>
+                <ShoppingCartIcon className="shopping-cart-icon" onClick={handleShoppingCart}/>
             </IconButtonBadge>
         </header>
     );

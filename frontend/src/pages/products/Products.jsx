@@ -17,7 +17,7 @@ const Products = () => {
 
     return (
         <div className="products">
-            <Text variant="h2">Productos</Text>
+            <Text variant="h2" className="title">Productos</Text>
             <div className="product-gallery__searcher">
                 <ProductSearcher
                     searchTerm={searchTerm}

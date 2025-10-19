@@ -1,0 +1,19 @@
+@use "@/scss/variables" as var;
+
+.highlighted-paragraph{
+    background-color: rgba($color: var.$color-neutro-400, $alpha: 0.9);
+    border-radius: 8px;
+
+    &__text{
+        font-size: var.$font-size-lg;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__text::after,
+    &__text::before{
+        content: url(/logo.png);
+    }
+}

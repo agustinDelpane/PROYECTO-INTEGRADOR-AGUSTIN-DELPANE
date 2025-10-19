@@ -5,8 +5,11 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: var.$color-primary-500;
-    padding: var.$spacing-sm;
+    background-color: rgba($color: var.$color-neutro-800, $alpha: 0.9);
+
+    .shopping-cart-icon{
+        color: white;
+    }
 
     :first-child {
         grid-column: 2;

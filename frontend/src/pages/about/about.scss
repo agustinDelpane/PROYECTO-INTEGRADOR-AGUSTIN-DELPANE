@@ -6,4 +6,13 @@
     align-items: center;
     gap: var.$spacing-lg;
     padding: var.$spacing-lg;
+
+    &-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var.$spacing-lg;
+        padding: var.$spacing-lg;
+        background-color: rgba($color: var.$color-neutro-400, $alpha: 0.85);
+    }
 }

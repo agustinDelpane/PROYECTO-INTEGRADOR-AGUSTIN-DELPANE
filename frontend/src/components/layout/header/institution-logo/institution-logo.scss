@@ -1,4 +1,5 @@
 @use "@/scss/variables" as var;
+@use "@/scss/typography";
 
 .institution-logo {
     display: flex;
@@ -7,13 +8,14 @@
 
     &__logo {
         height: fit-content;
-        width: var.$font-size-xxl;
+        width: var.$spacing-xxxl;
     }
 
     &__title {
-        font-size: var.$font-size-xxl;
-        font-weight: var.$font-weight-bold;
-        text-transform: uppercase;
+        font-size: var.$font-size-xxxl;
+        font-weight: var.$font-weight-regular;
+        letter-spacing: var.$spacing-xs;
+        color: var.$color-danger-700;
     }
 
 }

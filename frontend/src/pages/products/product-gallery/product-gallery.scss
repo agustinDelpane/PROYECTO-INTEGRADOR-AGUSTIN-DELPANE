@@ -21,4 +21,17 @@
     @media (max-width: 576px) {
         grid-template-columns: 1fr;
     }
+
+    .no-result{
+        color: white;
+        background-color: #6c757d;
+        width: 130%;
+        height: 20%;
+        text-align: center;
+        padding-top: 0.8rem;
+        border-radius: 8px;
+        position: relative;
+        left: 256px;
+        top: 50px;
+    }
 }

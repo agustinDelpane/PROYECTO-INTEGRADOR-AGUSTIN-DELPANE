@@ -7,10 +7,12 @@ import Vision from "./vision/Vision";
 const About = () => {
     return (
         <div className="about">
-            <Text variant="h2">Nosotros</Text>
-            <Mission/>
-            <Vision/>
-            <Values/>
+            <Text variant="h2" className="title">Nosotros</Text>
+            <div className="about-container">
+                <Mission/>
+                <Vision/>
+                <Values/>
+            </div>
         </div>
     );
 };

@@ -1,5 +1,22 @@
 @use "@/scss/variables" as var;
 
 .main {
-    grid-area: main;
+    .title{
+        color: var.$color-neutro-200;
+        background-color: rgba($color: var.$color-neutro-900, $alpha: 0.8);
+        border-radius: 8px;
+        width: 20%;
+        padding: var.$spacing-xss;
+        text-align: center;
+    }
+
+    .sub-title{
+        color: var.$color-neutro-200;
+        background-color: rgba($color: var.$color-neutro-900, $alpha: 0.8);
+        border-radius: 8px;
+        width: 170px;
+        height: 80px;
+        padding: var.$spacing-xss;
+        text-align: center;
+    }
 }

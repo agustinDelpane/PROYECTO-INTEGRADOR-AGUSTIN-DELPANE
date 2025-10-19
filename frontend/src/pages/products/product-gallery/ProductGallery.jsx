@@ -18,7 +18,6 @@ const ProductGallery = ({ searchTerm, highlighted }) => {
         setOpenAlert(true);
     };
 
-    // Filtrado por nombre + highlighted
     const filteredProducts = products.filter((product) => {
         const matchesName = product.name.toLowerCase().includes(searchTerm.toLowerCase());
         const matchesHighlighted = highlighted ? product.highlighted : true;

@@ -4,7 +4,7 @@
     grid-area: footer;
 
     padding: var.$spacing-sm 5%;
-    background-color: var.$color-primary-500;
+    background-color: rgba($color: var.$color-neutro-800, $alpha: 0.9);;
 
     &__content {
         display: grid;
