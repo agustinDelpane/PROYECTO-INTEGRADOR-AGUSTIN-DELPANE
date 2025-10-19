@@ -5,6 +5,7 @@ export const useProduct = () => {
     const [ products, setProducts ] = useState([]);
     const [ isLoading, setIsLoading ] = useState(false);
     const [ error, setError ] = useState(null);
+    const [ deleteAlertState, setDeleteAlertState ] = useState(false);
 
     const fetchProducts = async (filters) => {
         setIsLoading(true);
@@ -74,6 +75,7 @@ export const useProduct = () => {
 
         try {
             await productsApi.removeProduct(id);
+            setDeleteAlertState(true);
             fetchProducts();
         } catch (error) {
             setError(error.message || "Error al eliminar producto.");
@@ -95,5 +97,7 @@ export const useProduct = () => {
         createProduct,
         updateProduct,
         removeProduct,
+        deleteAlertState,
+        setDeleteAlertState,
     };
 };
