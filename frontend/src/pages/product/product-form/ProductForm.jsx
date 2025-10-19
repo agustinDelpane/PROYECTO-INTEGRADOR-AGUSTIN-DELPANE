@@ -1,6 +1,6 @@
 import AlertSuccessForm from "@/components/alerts/AlertSuccessForm";
 import { ButtonDanger, ButtonPrimary } from "@/components/buttons";
-import { InputDescription, InputImage, InputName, InputPrice, InputStock } from "@/components/inputs";
+import { InputDescription, InputImage, InputName, InputPrice, InputStock, InputHighlighted } from "@/components/inputs";
 import PropTypes from "prop-types";
 import "./product-form.scss";
 import useProductForm from "./useProductForm.js";
@@ -17,6 +17,7 @@ const ProductForm = (props) => {
             <InputDescription formik={formik} />
             <InputPrice formik={formik} />
             <InputStock formik={formik} />
+            <InputHighlighted formik={formik} />
             <InputImage formik={formik} isProduct={true} />
 
             <div className="product-form__actions">

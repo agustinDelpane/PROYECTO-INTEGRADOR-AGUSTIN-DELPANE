@@ -17,7 +17,11 @@ const useProductForm = (idProduct) => {
         validateOnChange: true,
         validateOnBlur: true,
         onSubmit: (values) => {
-            idProduct ? updateProduct(idProduct, values) : createProduct(values);
+            const valuesToSubmit = {
+                ...values,
+                highlighted: !!values.highlighted,
+            };
+            idProduct ? updateProduct(idProduct, valuesToSubmit) : createProduct(valuesToSubmit);
             setIsSubmitted(true);
             fetchProducts();
         },
@@ -28,7 +32,6 @@ const useProductForm = (idProduct) => {
             || !formik.values.name
             || formik.values.price <= 0
             || formik.values.stock < 0
-            || !formik.values.thumbnail
             || !formik.isValid;
     };
 

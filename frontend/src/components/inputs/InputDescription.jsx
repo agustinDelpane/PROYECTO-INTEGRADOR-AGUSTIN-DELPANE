@@ -5,7 +5,8 @@ const InputDescription = (props) => {
     const {
         formik,
         rows = 4,
-        maxLength = 100,
+        minLength = 10,
+        maxLength = 400,
         ...restProps
     } = props;
 
@@ -22,7 +23,7 @@ const InputDescription = (props) => {
             onBlur={formik.handleBlur}
             error={formik.touched.description && Boolean(formik.errors.description)}
             helperText={formik.touched.description && formik.errors.description}
-            inputProps={{ maxLength }}
+            inputProps={{ minLength, maxLength }}
             {...restProps}/>
     );
 };
@@ -36,6 +37,7 @@ InputDescription.propTypes = {
         errors: PropTypes.shape({ description: PropTypes.string }).isRequired,
     }).isRequired,
     rows: PropTypes.number,
+    minLength: PropTypes.number,
     maxLength: PropTypes.number,
 };
 

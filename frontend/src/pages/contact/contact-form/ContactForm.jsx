@@ -26,10 +26,10 @@ const ContactForm = (props) => {
 
             <div className="contact-form__alert">
                 <AlertSuccessForm
-                    open={success && !isLoading && !error}
+                    open={Boolean(success && !isLoading && !error)}
                     message="Tu consulta fue enviada correctamente."/>
                 <AlertDangerForm
-                    open={success && !isLoading && error}
+                    open={Boolean(error && !isLoading)}
                     message={error?.message || "Error al enviar la consulta. Por favor, inténtalo de nuevo."}/>
             </div>
         </form>

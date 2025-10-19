@@ -15,4 +15,14 @@
         display: flex;
         gap: var.$spacing-md;
     }
+
+    &__alert {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 9999;
+    }
 }

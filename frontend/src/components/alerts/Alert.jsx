@@ -32,7 +32,7 @@ const Alert = (props) => {
             {...restProps}>
             <div className="alert__content">
                 <Text className="alert__message" variant="span">{message}</Text>
-                <IconButton size="small" onClick={onClose}>
+                <IconButton size="small" onClick={handleClose}>
                     <CloseOutlined className="alert__icon"/>
                 </IconButton>
             </div>

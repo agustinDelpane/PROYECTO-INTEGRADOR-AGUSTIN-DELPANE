@@ -8,3 +8,4 @@ export { default as InputPhone } from "./InputPhone";
 export { default as InputPrice } from "./InputPrice";
 export { default as InputStock } from "./InputStock";
 export { default as InputSurname } from "./InputSurname";
+export { default as InputHighlighted } from "./InputHighlighted";
